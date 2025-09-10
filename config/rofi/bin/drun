@@ -1,0 +1,11 @@
+#!/bin/bash
+
+rofi -theme ~/.config/rofi/themes/launcher.rasi \
+     -show drun \
+     -modi "drun,drun-utils,drun-games,drun-network,drun-media" \
+     -drun-exclude-categories "Game" \
+     -display-drun "" \
+     -display-drun-games "󰊴" \
+     -display-drun-utils "" \
+     -display-drun-network "󰭹" \
+     -display-drun-media "󰲍" \

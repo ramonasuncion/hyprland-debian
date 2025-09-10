@@ -1,0 +1,1 @@
+/home/cebem1nt/scripts/sys/toggle_caffeine
