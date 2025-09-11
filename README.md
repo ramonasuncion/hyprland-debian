@@ -2,9 +2,9 @@
 
 ### Quick info
 
-- Panel: waybar
+- Panel: waybar (0.13)
 - All the menus (except notifications): rofi
-- Notifications: swaync
+- Notifications: swaync (0.11!)
 - GTK theme: [kripton](https://github.com/EliverLara/Kripton)
 - fetch: [mine :)](https://github.com/cebem1nt/sillyfetch)
 
