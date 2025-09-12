@@ -1,0 +1,3 @@
+[submodule "scripts/big/auto_walls"]
+	path = scripts/big/auto_walls
+	url = https://github.com/cebem1nt/auto_walls.git

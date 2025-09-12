@@ -1,0 +1,33 @@
+import os, subprocess, re
+from sys import exit
+
+# Note, this one is very raw, i might improve it later
+
+DIR = os.path.expanduser("~/docs/bookmarks") 
+FILE = os.path.join(DIR, "bookmarks.txt")
+ROFI_THEME = os.path.expanduser("~/.config/rofi/themes/bookmarks.rasi")
+
+with open(FILE) as f:
+    tags = []
+    contents = []
+
+    for line in f:
+        tag = re.search(r'\[(.*?)\]', line).group(1)
+        tags.append(tag)
+        contents.append(line.replace(f"[{tag}] ", ""))
+
+try:
+    result = subprocess.run(
+    ["rofi", "-dmenu", "-p", "Select bookmark:", "-theme", ROFI_THEME],
+    input='\n'.join(tags),
+    text=True,
+    capture_output=True,
+    check=True
+)
+except:
+    exit(1)
+
+selected_bookmark = contents[tags.index(result.stdout.strip())]
+
+subprocess.run(["wtype", selected_bookmark])
+
