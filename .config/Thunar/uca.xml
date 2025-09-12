@@ -73,4 +73,15 @@
 	<patterns>*</patterns>
 	<image-files/>
 </action>
+<action>
+	<icon>git</icon>
+	<name>Quick pull</name>
+	<submenu></submenu>
+	<unique-id>1757638961953653-1</unique-id>
+	<command>git -C %d pull</command>
+	<description>Pull changes from remote</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
 </actions>
