@@ -11,6 +11,6 @@ else
 fi
 
 if [[ $STATUS -eq 0 ]]; then 
-    notify-send "New screenshot" "$FILE" -i applets-screenshooter
+    notify-send -a screenshot "New screenshot" "$FILE" -i applets-screenshooter
     wl-copy < $FILE &
 fi

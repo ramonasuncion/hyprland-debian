@@ -1,7 +1,7 @@
+#!/usr/bin/env python3
+
 import os, subprocess, re
 from sys import exit
-
-# Note, this one is very raw, i might improve it later
 
 DIR = os.path.expanduser("~/docs/bookmarks") 
 FILE = os.path.join(DIR, "bookmarks.txt")

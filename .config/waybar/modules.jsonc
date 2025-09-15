@@ -86,8 +86,8 @@
         "menu": "on-click-right",
         "menu-file": "~/.config/waybar/context/network.xml",
         "menu-actions": {
-  			"action-1": "hyprctl dispatch exec ~/scripts/sys/network_disconnect",
-  			"action-2": "hyprctl dispatch exec ~/scripts/sys/network_reconnect",
+  			"action-1": "hyprctl dispatch exec ~/.local/bin/network_disconnect",
+  			"action-2": "hyprctl dispatch exec ~/.local/bin/network_reconnect",
   			"action-3": "hyprctl dispatch exec nm-connection-editor"
   		}
     },
@@ -101,7 +101,7 @@
         "tooltip-format": "{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}",
         "tooltip-format-enumerate-connected-battery": "{device_alias}\t {device_battery_percentage}%",
-        "on-click": "~/scripts/sys/toggle_bluetooth &",
+        "on-click": "~/.local/bin/toggle_bluetooth &",
         "on-click-right": "hyprctl dispatch exec blueman-manager"
     },
 
@@ -176,10 +176,10 @@
   			"action-3-2": "hyprctl keyword monitor 'eDP-1,1920x1080@90, auto,1'",
   			"action-3-3": "hyprctl keyword monitor 'eDP-1,1920x1080@144,auto,1'",
 
-            "action-4-1": "hyprctl dispatch exec ~/scripts/sys/toggle_caffeine shutdown",
-            "action-4-2": "hyprctl dispatch exec ~/scripts/sys/toggle_caffeine handle-lid-switch",
+            "action-4-1": "hyprctl dispatch exec ~/.local/bin/toggle_caffeine shutdown",
+            "action-4-2": "hyprctl dispatch exec ~/.local/bin/toggle_caffeine handle-lid-switch",
 
-            "action-5": "hyprctl dispatch exec ~/scripts/sys/ultra_powersafe_mode",
+            "action-5": "hyprctl dispatch exec ~/.local/bin/ultra_powersafe_mode",
             "action-6": "hyprctl reload"
   		}
     }
