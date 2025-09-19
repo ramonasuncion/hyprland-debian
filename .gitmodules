@@ -1,3 +1,6 @@
-[submodule "scripts/big/auto_walls"]
-	path = scripts/big/auto_walls
+[submodule ".local/bin/auto_walls"]
+	path = .local/bin/auto_walls
 	url = https://github.com/cebem1nt/auto_walls.git
+[submodule ".vscode-oss/tokyo-night-dark-enhanced"]
+	path = .vscode-oss/tokyo-night-dark-enhanced
+	url = https://github.com/Venage5603/Tokyo-Night-Dark-Enhanced.git
