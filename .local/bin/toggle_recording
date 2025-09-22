@@ -2,7 +2,9 @@
 
 if pgrep -x "wf-recorder" > /dev/null; then
     pkill wf-recorder
-    notify-send 'Finished recording' 'wf-recorder' -i simplescreenrecorder-panel
+    notify-send --app-name $0 \
+                --icon simplescreenrecorder-panel \
+                "Finished recording" "wf-recorder"
     exit 0
 fi
 
@@ -23,6 +25,8 @@ else
     AREA=''
 fi
 
-notify-send "Recording..." wf-recorder -i simplescreenrecorder-panel
-wf-recorder "$AREA" --audio="$AUDIO_SOURCE" -D --file $FILE -c libx264rgb
+notify-send --app-name $0 \
+            --icon simplescreenrecorder-recording \
+            "Recording..." "wf-recorder"
 
+wf-recorder "$AREA" --audio="$AUDIO_SOURCE" -D --file $FILE -c libx264rgb

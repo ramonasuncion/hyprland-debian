@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Set the volume using playerctl
 playerctl volume $1
 
 # Check if the command was successful
@@ -9,6 +8,7 @@ if [ $? -eq 0 ]; then
     volume=$(playerctl volume)
     volume_int=$(printf "%.0f" "$(echo "$volume * 100" | bc)")
 
-    # Send a notification with the current volume
-    notify-send --replace-id=4 --icon=$icon "Current volume is: $volume_int%"
+    notify-send --app-name $0 --icon $icon \
+                "Current volume is: $volume_int%" \
+                -h "string:x-canonical-private-synchronous:$0"
 fi

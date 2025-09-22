@@ -12,4 +12,6 @@ else
     ICON="asus_notif_yellow"
 fi
 
-notify-send --replace-id=3 --icon="$ICON" --app-name=asusctl "Profile changed" "$PROFILE"
+notify-send --icon $ICON --app-name $0 \
+            "Profile changed" "$PROFILE" \
+            -h "string:x-canonical-private-synchronous:$0"

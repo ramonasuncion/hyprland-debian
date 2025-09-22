@@ -5,27 +5,27 @@ if [ $# -ne 1 ]; then
     exit 1
 fi
 
-value=$1
+VALUE=$1
 
-current_vol=$(pactl get-sink-volume @DEFAULT_SINK@ | awk '{print $5}' | tr -d '%')
+CURRENT_VOL=$(pactl get-sink-volume @DEFAULT_SINK@ | cut -d' ' -f5 | tr -d '%')
+NEW_VOL=$((CURRENT_VOL + VALUE))
 
-new_vol=$((current_vol + value))
-
-if [ "$new_vol" -gt 200 ]; then
-    new_vol=200
-elif [ "$new_vol" -lt 0 ]; then
-    new_vol=0
+if [ "$NEW_VOL" -gt 200 ]; then
+    NEW_VOL=200
+elif [ "$NEW_VOL" -lt 0 ]; then
+    NEW_VOL=0
 fi
 
-pactl set-sink-volume @DEFAULT_SINK@ ${new_vol}%
-current_vol=$(pactl get-sink-volume @DEFAULT_SINK@ | awk '{print $5}' | tr -d '%')
+pactl set-sink-volume @DEFAULT_SINK@ ${NEW_VOL}%
 
-if [ "$current_vol" -gt 70 ]; then
-    icon="audio-volume-high"
-elif [ "$current_vol" -lt 40 ]; then
-    icon="audio-volume-low"
+if [ "$NEW_VOL" -gt 70 ]; then
+    ICON="audio-volume-high"
+elif [ "$NEW_VOL" -lt 40 ]; then
+    ICON="audio-volume-low"
 else
-    icon="audio-volume-medium"
+    ICON="audio-volume-medium"
 fi
 
-notify-send -a volume "Volume: $current_vol%" --icon="$icon" -h string:x-canonical-private-synchronous:volume
+notify-send --app-name $0 --icon $ICON \
+            "Volume: $NEW_VOL%"  \
+            -h "string:x-canonical-private-synchronous:$0"

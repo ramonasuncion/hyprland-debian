@@ -2,11 +2,12 @@
 
 import os, subprocess
 
-waybar_dir = os.path.expanduser('~/.config/waybar')
-with_music  = '{ "include": [ "~/.config/waybar/layouts/with_music.jsonc" ] }'
-with_window = '{ "include": [ "~/.config/waybar/layouts/with_window.jsonc" ] }' 
+waybar_dir = '~/.config/waybar'
+with_music  = f'{{ "include": [ "{waybar_dir}/layouts/with_music.jsonc" ] }}'
+with_window = f'{{ "include": [ "{waybar_dir}/layouts/with_window.jsonc" ] }}' 
 
-cfg_path = os.path.join(waybar_dir, 'config.jsonc')
+cfg_path = os.path.join(
+    os.path.expanduser(waybar_dir), 'config.jsonc')
 
 with open(cfg_path) as f:
     is_with_music = 'with_music' in f.read()
@@ -19,4 +20,3 @@ with open(cfg_path, 'w') as f:
 
 os.system('killall waybar')
 subprocess.Popen('waybar')
-
