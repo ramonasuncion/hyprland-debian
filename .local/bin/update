@@ -8,6 +8,10 @@ i_dont_need_those=(
     "/usr/share/applications/thunar-settings.desktop"
     "/usr/share/applications/thunar-bulk-rename.desktop"
     "/usr/share/applications/qt6ct.desktop"
+    "/usr/share/applications/assistant.desktop"
+    "/usr/share/applications/qdbusviewer.desktop"
+    "/usr/share/applications/linguist.desktop"
+    "/usr/share/applications/designer.desktop"
 )
 
 for path in "${i_dont_need_those[@]}"; do

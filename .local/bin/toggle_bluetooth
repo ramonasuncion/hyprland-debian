@@ -20,9 +20,12 @@ if is_bluetooth_active:
     out = run("bluetoothctl devices Connected").strip()
 
     # Check if there is a connection to a device
-    if out.splitlines()[0].startswith("Device"):
-        run("playerctl pause")
-    
+    try:
+        if out.splitlines()[0].startswith("Device"):
+            run("playerctl pause")
+    except:
+        pass
+
     run("bluetoothctl power off")
     run("rfkill block bluetooth")
 
