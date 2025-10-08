@@ -7,7 +7,7 @@ fi
 
 VALUE=$1
 
-CURRENT_VOL=$(pactl get-sink-volume @DEFAULT_SINK@ | cut -d' ' -f5 | tr -d '%')
+CURRENT_VOL=$(pactl get-sink-volume @DEFAULT_SINK@ | awk '{print $5}' | tr -d '%')
 NEW_VOL=$((CURRENT_VOL + VALUE))
 
 if [ "$NEW_VOL" -gt 200 ]; then

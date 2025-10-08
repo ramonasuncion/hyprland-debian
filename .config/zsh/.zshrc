@@ -20,7 +20,7 @@ setopt autocd
 
 # Set-up icons for files/folders in terminal
 
-export PATH="$HOME/scripts/path:$HOME/.config/npm/bin:$PATH"
+export PATH="$HOME/.local/bin/:$HOME/.config/npm/bin:$PATH"
 
 export XDG_STATE_HOME="$HOME/.local/state"
 export XDG_DATA_HOME="$HOME/.local/share"
@@ -37,6 +37,8 @@ export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc":"$XDG_CONFIG_HOME/gtk-2.0/
 export KEEPER_STORAGE_DIR="$XDG_STATE_HOME/keeper_storage"
 export WGETRC="$XDG_CONFIG_HOME/wgetrc"
 export MYSQL_HISTFILE="$XDG_DATA_HOME/mysql/history"
+export DOCKER_CONFIG="$XDG_CONFIG_HOME/docker"
+
 
 export GNUPGHOME="$XDG_DATA_HOME/gnupg"
 export PYTHON_HISTORY="$XDG_STATE_HOME/python_history"
@@ -60,7 +62,7 @@ alias ht='htop'
 alias code='codium'
 alias g='grep'
 
-alias vimzshrc='vim ~/.config/zsh/.zshrc'
+alias vimzshrc="vim $XDG_CONFIG_HOME/zsh/.zshrc"
 alias vimsudo='sudo -E nvim /etc/sudoers'
 alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
 
