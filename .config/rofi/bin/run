@@ -2,4 +2,6 @@
 
 rofi -theme ~/.config/rofi/themes/launcher.rasi \
      -theme-str 'mainbox {children: [ "inputbar", "message", "listview"];}' \
-     -modi run -no-show-icons -show run 
+     -no-show-icons \
+     -modi run \
+     -show run 

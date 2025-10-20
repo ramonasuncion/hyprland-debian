@@ -1,6 +1,5 @@
 @import "colors/tokyonight.rasi"
 
-
 * {
     font: "CaskaydiaCove Nerd Font, bold 12";
     background-color: transparent;
@@ -48,7 +47,7 @@ listview {
 
 element {
     padding: 0px 11px; 
-    border-radius: 4px;  
+    border-radius: 18px;  
     margin: 2px;
     cursor: pointer;
 }
