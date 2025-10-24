@@ -16,10 +16,6 @@ source $ZSH/oh-my-zsh.sh
 zstyle ':completion:*' special-dirs true
 setopt autocd
 
-# Project page: https://gitlab.com/phoneybadger/pokemon-colorscripts#on-other-distros-and-macos
-
-# Set-up icons for files/folders in terminal
-
 export PATH="$HOME/.local/bin/:$HOME/.config/npm/bin:$PATH"
 
 export XDG_STATE_HOME="$HOME/.local/state"
