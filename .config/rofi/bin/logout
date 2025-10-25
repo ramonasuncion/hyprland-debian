@@ -15,8 +15,7 @@ NO=''
 
 # Rofi CMD
 rofi_cmd() {
-	rofi -dmenu -sync -theme ${theme} \
-         #-theme-str 'mainbox {children: [ "message", "listview" ];}'
+	rofi -dmenu -sync -theme ${theme}
 }
 
 # Confirmation CMD

@@ -70,7 +70,7 @@ if [ -e "$DEST/.local/bin" ]; then
 fi
 cp -r "$SRC/.local/bin" "$DEST/.local/"
 
-# Instead of replacing, just add content
+# Instead of replacing, just add content of these 
 cp "$SRC"/.local/share/applications/* "$DEST"/.local/share/applications
 cp "$SRC"/.local/share/templates/* "$DEST"/.local/share/templates
 
