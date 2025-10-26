@@ -1,47 +1,15 @@
-# My dotfiles
+# Hyprland Debian config
 
-### Quick info
+- Waybar
+- Rofi
+- Swaync
+- Alacritty
+- Zsh
+- [Kripton - GTK](https://github.com/EliverLara/Kripton)
+- [Papirus - Icons](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 
-- Panel: waybar
-- All the menus (except notifications): rofi
-- Notifications: swaync (0.11!)
-- Terminal: alacritty
-- Shell: zsh
-- GTK theme: [kripton](https://github.com/EliverLara/Kripton)
-- fetch: [mine :)](https://github.com/cebem1nt/sillyfetch)
+Thanks
+- [cebem1nt](https://github.com/cebem1nt/dotfiles) for dotfiles
+- [adi1090x](https://github.com/adi1090x/rofi) for rofi themes
 
-Big thanks to this [collection of rofi themes](https://github.com/adi1090x/rofi)
-
-## Previews
-
-![Image 1](previews/1.png)
-
-![Image 2](previews/2.png)
-
-![Image 3](previews/3.png)
-
-### Apps
-
-<details>
-    <summary>📁 Thunar</summary>
-    
-![Thunar](previews/thunar.png)
-
-</details>
-
-
-<details>
-    <summary>🌐 Zen</summary>
-    
-![Zen](previews/zen.png)
-
-</details>
-
-
-<details>
-    <summary>💻 vscodium</summary>
-    
-![Vscodium](previews/vscodium.png)
-
-</details>
 
