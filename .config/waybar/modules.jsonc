@@ -50,7 +50,7 @@
         "interval": 10,
         "format": "{icon} {temperatureC}°",
         "critical-threshold": 90,
-        "format-icons": ["","","","",""]	
+        "format-icons": ["","","","",""]
     },
 
     "backlight": {
@@ -121,9 +121,9 @@
     },
 
     "clock": {
-        "timezone": "America/Argentina/Buenos_Aires",
+        "timezone": "America/New_York",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%H:%M %d %B %Y}",
+        "format-alt": "{:%I:%M %p %d %B %Y}",
         "on-click-right": "hyprctl dispatch exec '[float; size 500 270] alacritty -e peaclock'",
         "calendar": {
             "mode": "month",
