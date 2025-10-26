@@ -8,6 +8,13 @@
 - [Kripton - GTK](https://github.com/EliverLara/Kripton)
 - [Papirus - Icons](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 
+Install
+- [Nerd font installer](https://github.com/officialrajdeepsingh/nerd-fonts-installer)
+- [Hyprlock](https://github.com/hyprwm/hyprlock)
+- [Debian Hyprland](https://github.com/JaKooLit/Debian-Hyprland)
+- [Wallpaper](https://github.com/dharmx/walls)
+
+
 Thanks
 - [cebem1nt](https://github.com/cebem1nt/dotfiles) for dotfiles
 - [adi1090x](https://github.com/adi1090x/rofi) for rofi themes
