@@ -6,8 +6,8 @@
         "persistent-workspaces": { "*": 6 },
         "cursor" : true,
         "format-icons": {
-            "active": "󰮯",
-            "persistent": "",
+            "active": "󰜋",
+            "persistent": "󰜌",
             "empty": ""
          }
     },
@@ -157,7 +157,7 @@
 
     "custom/ctlcenter" : {
         "tooltip" : false,
-        "format" : "",
+        "format" : "",
         "on-click" : "swaync-client -t",
         "menu": "on-click-right",
         "menu-file": "~/.config/waybar/context/ctlcenter.xml",

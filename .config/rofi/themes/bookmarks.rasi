@@ -31,7 +31,8 @@ inputbar {
 }
 
 entry {
-    placeholder: "Search bookmark:";
+    placeholder: "Bookmark:";
+    placeholder-color: @foreground;
     text-color: @foreground; 
 }
 
@@ -40,17 +41,10 @@ textbox {
 }
 
 listview {
-    margin: 0 0 10px 0;
+    margin: 15px 0;
     lines: 5;
     columns: 1;
-    fixed-height: false;
-    scrollbar: true;
-}
-
-scrollbar {
-    handle-width:  2px;
-    handle-color:  @background-sec;
-    border-radius: 20px;
+    fixed-height: true;
 }
 
 element {
@@ -60,18 +54,15 @@ element {
 }
 
 element-text { 
-    padding: 20px 0;
-    color: @foreground; 
+    padding: 35px 0;
 }
 
 element-icon {
     size: 1em;
 }
 
-element-text selected normal,
 element selected normal,
-element-text selected active,
 element selected active {
     background-color: @foreground;
-    color: @background;
+    text-color: @background;
 }
