@@ -1,5 +1,7 @@
 # Hyprland Debian config
 
+![Desktop](./desktop.png "Desktop image")
+
 - Waybar
 - Rofi
 - Swaync
