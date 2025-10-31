@@ -44,9 +44,9 @@
         "buttons-grid": {
             "actions": [
                 {
-                    "label": "󰌪",
+                    "label": "󰽧",
                     "type": "toggle",
-                    "command": "bash -c $HOME/.config/swaync/scripts/quiet.sh",
+                    "command": "bash -c $HOME/.config/swaync/scripts/redshift.sh",
                     "update-command": "bash -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && $HOME/.config/swaync/scripts/update_quiet.sh'"
                 },
                 {
